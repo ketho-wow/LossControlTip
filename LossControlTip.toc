@@ -1,0 +1,7 @@
+## Interface: 70200
+## Version: 0.1
+## Title: LossControlTip
+## Notes: Shows the Loss of Control spell tooltip
+## Author: Ketho @ EU-Boulderfist
+
+LossControlTip.lua
