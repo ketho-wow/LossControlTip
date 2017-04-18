@@ -1,10 +1,11 @@
 -- License: Public Domain
 
-local LossControlToolTip = CreateFrame("GameTooltip", "LossControlToolTip", LossOfControlFrame, "GameTooltipTemplate")
+local tt = CreateFrame("GameTooltip", "LossControlTip", LossOfControlFrame, "GameTooltipTemplate")
+tt:SetScale(.9)
 
 LossOfControlFrame:HookScript("OnEvent", function(self, event)
 	if event == "LOSS_OF_CONTROL_ADDED" then
-		LossControlToolTip:SetOwner(self, "ANCHOR_TOP")
-		LossControlToolTip:SetSpellByID(self.spellID)
+		tt:SetOwner(self, "ANCHOR_TOP")
+		tt:SetSpellByID(self.spellID)
 	end
 end)
